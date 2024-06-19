@@ -1,0 +1,1 @@
+CREATE TABLE "public"."employee" ("id" uuid NOT NULL, "first_name" text, "last_name" text, "role" text, "leave_balance" integer NOT NULL, PRIMARY KEY ("id") , FOREIGN KEY ("id") REFERENCES "public"."user"("id") ON UPDATE restrict ON DELETE restrict);

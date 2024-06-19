@@ -1,0 +1,1 @@
+CREATE TABLE "public"."organization" ("id" uuid NOT NULL, "name" text NOT NULL, "address" text, "role" text, PRIMARY KEY ("id") , FOREIGN KEY ("id") REFERENCES "public"."user"("id") ON UPDATE restrict ON DELETE restrict);

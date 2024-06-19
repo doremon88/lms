@@ -1,0 +1,36 @@
+table:
+  name: user
+  schema: public
+object_relationships:
+  - name: admin
+    using:
+      foreign_key_constraint_on:
+        column: id
+        table:
+          name: admin
+          schema: public
+  - name: employee
+    using:
+      foreign_key_constraint_on:
+        column: id
+        table:
+          name: employee
+          schema: public
+  - name: media_file
+    using:
+      foreign_key_constraint_on: avatar_id
+  - name: organization
+    using:
+      foreign_key_constraint_on:
+        column: id
+        table:
+          name: organization
+          schema: public
+array_relationships:
+  - name: leaves
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          name: leave
+          schema: public

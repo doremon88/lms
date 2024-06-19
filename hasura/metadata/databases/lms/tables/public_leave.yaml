@@ -1,0 +1,10 @@
+table:
+  name: leave
+  schema: public
+object_relationships:
+  - name: leave_type
+    using:
+      foreign_key_constraint_on: type_id
+  - name: user
+    using:
+      foreign_key_constraint_on: user_id

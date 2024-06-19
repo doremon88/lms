@@ -1,1 +1,12 @@
-[]
+- "!include public_admin.yaml"
+- "!include public_employee.yaml"
+- "!include public_employee_to_manager.yaml"
+- "!include public_employee_to_organization.yaml"
+- "!include public_file_to_organization.yaml"
+- "!include public_holiday.yaml"
+- "!include public_leave.yaml"
+- "!include public_leave_type.yaml"
+- "!include public_media_file.yaml"
+- "!include public_organization.yaml"
+- "!include public_permission.yaml"
+- "!include public_user.yaml"
